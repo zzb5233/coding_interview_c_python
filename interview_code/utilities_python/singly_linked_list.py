@@ -32,6 +32,7 @@ class Singly_linked_list():
                 cur_node = cur_node.next_item
             cur_node.next_item = node
         self.length += 1
+        return node
     #eg. :
     #    if index is 0, then the item will be head
     #    if index is 1, then the item will be the second item
@@ -78,7 +79,7 @@ class Singly_linked_list():
         
     def __repr__(self):
         if self.is_empty():
-            print('the singly linked list is empty')
+            return 'the singly linked list is empty'
         the_list = ''
         cur_node = self.head
         while cur_node.next_item:
